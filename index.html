@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tkm</title>
+  <style>
+    body{
+      margin:0;
+      padding: 0;
+      background: #D6E6D9;
+      
+      animation-duration: 5s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite
+      
+    }
+    img{
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      z-index: 1;
+      margin-top: 10%
+   
+    }
+    #neg{
+      background: black;
+      width:100%;
+      height:1425px;
+      position: relative;
+      position: fixed;
+      z-index: 2;
+      opacity: 0.5
+      
+    }
+    #p{
+      color: white;
+      font-size: 50px;
+      z-index: 3;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-family:'courier New';
+      animation-name: hol;
+      animation-duration: 5s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite
+    }
+    @keyframes hol{
+      20%{ color: skyblue}
+      40%{ color: yellow;}
+      60%{ color: greenyellow;}
+      80%{ color: orange;}}
+      
+       @keyframes hola{
+      20%{ background: skyblue}
+      40%{ background: yellow;}
+      60%{ background: greenyellow;}
+      80%{ background: orange;}}
+      
+      
+      #k{ opacity: 0}
+      #m{ opacity: 0}      
+      #n{ opacity: 0}
+      #o{ opacity: 0; width: 100px; height:80px; font-size: 40px}  
+      #o2{ opacity: 0; width: 100px; height:80px; font-size: 40px} 
+      #vi{ display: none; margin-top: -30%; margin-left: 10%; width: 300px; height: 200px;}
+      #vi2{ display: none; margin-top: -30%; margin-left: 10%; width: 300px; height: 200px;
+        border-radius: 20%
+      }      
+      input{ background: transparent }
+      #at{ magin-top: -10%; mrgin-left: 10%; position: absolute; z-index: 4 }
+  </style>
+</head>
+
+<body id="ja">
+ 
+<img src="arbol.jpg" id="im" alt="">
+<div id="neg"></div>
+ <input id="at" value="↪️" type="button" onclick="atr()">
+<script defer src="https://app.embed.im/snow.js"></script>
+<div id="p">
+<p id="k">Feliz</p>
+<p id="m">Navidad</p>
+<p id="n">Fer ^^</p>
+<input id="o" type="button" value="🎁 " onclick="ap()">
+<input id="o2" type="button" value="🎁 " onclick="ap2()">
+<div>
+  
+  <script>
+  setTimeout(()=>{document.getElementById("k").style.opacity= "1"},2000);
+  setTimeout(()=>{document.getElementById("m").style.opacity= "1"},3000);
+  setTimeout(()=>{document.getElementById("n").style.opacity= "1"},4000);
+  setTimeout(()=>{document.getElementById("o").style.opacity= "1"},5000);
+  setTimeout(()=>{document.getElementById("o2").style.opacity= "1"},5000);
+  
+  function atr(){
+    document.getElementById("vi").style.display = "none";
+    document.getElementById("vi2").style.display = "none";
+    document.getElementById("ja").style.background = "#D6E6D9";
+    document.getElementById("im").style.opacity = '1';
+    document.getElementById("o").style.opacity= "1"
+    document.getElementById("o2").style.opacity= "1";
+    document.getElementById("ja").style.animation = "none";
+    document.getElementById("neg").style.opacity= "0.5"
+    
+    } ;
+  
+  
+  
+  function ap(){
+    document.getElementById("vi").style.display = "block";
+    document.getElementById("ja").style.background = "black";
+    document.getElementById("im").style.opacity = "0";
+    document.getElementById("o").style.opacity= "0";
+    document.getElementById("o2").style.opacity= "0"
+  } ;
+  function ap2(){
+    document.getElementById("ja").style.animationName = "hola"; 
+    
+    
+    document.getElementById("vi2").style.display = "block";
+    document.getElementById("im").style.opacity = "0";
+    document.getElementById("o").style.opacity= "0";
+    document.getElementById("o2").style.opacity= "0";
+    document.getElementById("neg").style.opacity= "0"
+    
+    
+    
+    
+    
+    
+    
+  }
+ 
+  
+  </script>
+  
+  <video id="vi" controls src="vid1.mp4"></video>
+  <video id="vi2" controls src="vid2.mp4"></video>
+ 
+</body>
+
+</html>
